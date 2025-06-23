@@ -34,7 +34,7 @@ Ce projet vise à automatiser la collecte d’informations sur les clubs de foot
 
 1. Cloner le dépôt  
 ```bash
-git clone <URL_DU_DEPOT>
+git clone <https://github.com/elliot-bordrez/ligue1_scraper>
 cd ligue1_scraper
 
 2. Créer un environnement virtuel
