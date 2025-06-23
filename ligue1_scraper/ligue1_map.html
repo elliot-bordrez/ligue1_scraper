@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cdc37a07069654fd14b1d63687258e44 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cdc37a07069654fd14b1d63687258e44" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cdc37a07069654fd14b1d63687258e44 = L.map(
+                "map_cdc37a07069654fd14b1d63687258e44",
+                {
+                    center: [46.8, 2.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3b82b114a8774e1a55828ba86134aeff = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3b82b114a8774e1a55828ba86134aeff.addTo(map_cdc37a07069654fd14b1d63687258e44);
+        
+    
+            var feature_group_d62b5509acd085c05357d6215a69c6de = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_a80e2c9515cfca179ae2b7f85c3367d4 = L.circleMarker(
+                [43.7276, 7.419],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d62b5509acd085c05357d6215a69c6de);
+        
+    
+        var popup_ec8b050c1736500763b6f009aa5dd23c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_df4a49a3251217edc185fce2fc94a832 = $(`<div id="html_df4a49a3251217edc185fce2fc94a832" style="width: 100.0%; height: 100.0%;"><strong>AS Monaco</strong><br>Stade : Stade Louis-II<br>Capacité : 16500</div>`)[0];
+                popup_ec8b050c1736500763b6f009aa5dd23c.setContent(html_df4a49a3251217edc185fce2fc94a832);
+            
+        
+
+        circle_marker_a80e2c9515cfca179ae2b7f85c3367d4.bindPopup(popup_ec8b050c1736500763b6f009aa5dd23c)
+        ;
+
+        
+    
+    
+            var circle_marker_91c0287b8859f09997f7fb5c96258f1e = L.circleMarker(
+                [48.4030422, -4.4613605],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d62b5509acd085c05357d6215a69c6de);
+        
+    
+        var popup_c2e518ef46d4981dd0731f96a8bacd6b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f471ba1b1e6b4283a2e65c92153e8a70 = $(`<div id="html_f471ba1b1e6b4283a2e65c92153e8a70" style="width: 100.0%; height: 100.0%;"><strong>Stade brestois 29</strong><br>Stade : Stade Francis-Le Blé<br>Capacité : 15220</div>`)[0];
+                popup_c2e518ef46d4981dd0731f96a8bacd6b.setContent(html_f471ba1b1e6b4283a2e65c92153e8a70);
+            
+        
+
+        circle_marker_91c0287b8859f09997f7fb5c96258f1e.bindPopup(popup_c2e518ef46d4981dd0731f96a8bacd6b)
+        ;
+
+        
+    
+    
+            var circle_marker_826aaa7ee9563979ab8dd713b80fa3aa = L.circleMarker(
+                [47.4605516, -0.5306948],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d62b5509acd085c05357d6215a69c6de);
+        
+    
+        var popup_87d87ab2538ae828bfa0f57128f6a32b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_32dff41db7a9b72c19d921bcbabaf0a8 = $(`<div id="html_32dff41db7a9b72c19d921bcbabaf0a8" style="width: 100.0%; height: 100.0%;"><strong>Angers SCO</strong><br>Stade : Stade Raymond-Kopa<br>Capacité : 19350</div>`)[0];
+                popup_87d87ab2538ae828bfa0f57128f6a32b.setContent(html_32dff41db7a9b72c19d921bcbabaf0a8);
+            
+        
+
+        circle_marker_826aaa7ee9563979ab8dd713b80fa3aa.bindPopup(popup_87d87ab2538ae828bfa0f57128f6a32b)
+        ;
+
+        
+    
+    
+            feature_group_d62b5509acd085c05357d6215a69c6de.addTo(map_cdc37a07069654fd14b1d63687258e44);
+        
+    
+            var feature_group_0a3fa097231c16328ee74be8aec513ba = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_98c27463d23f30275ba8382934e34c3b = L.circleMarker(
+                [43.7051477, 7.1926033],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0a3fa097231c16328ee74be8aec513ba);
+        
+    
+        var popup_de3c55ed5b2598d6c75285d8a6cfd0a5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_91c534a47ac0704182fe22d3c5694375 = $(`<div id="html_91c534a47ac0704182fe22d3c5694375" style="width: 100.0%; height: 100.0%;"><strong>OGC Nice</strong><br>Stade : Allianz Riviera<br>Capacité : 35596</div>`)[0];
+                popup_de3c55ed5b2598d6c75285d8a6cfd0a5.setContent(html_91c534a47ac0704182fe22d3c5694375);
+            
+        
+
+        circle_marker_98c27463d23f30275ba8382934e34c3b.bindPopup(popup_de3c55ed5b2598d6c75285d8a6cfd0a5)
+        ;
+
+        
+    
+    
+            var circle_marker_6089880b421682a81c0fea986d577847 = L.circleMarker(
+                [50.43281, 2.8149878],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0a3fa097231c16328ee74be8aec513ba);
+        
+    
+        var popup_508a374b66aa41592984eb4e2a11e901 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4fc0f5e4846aee5937866ca82ce5d4f5 = $(`<div id="html_4fc0f5e4846aee5937866ca82ce5d4f5" style="width: 100.0%; height: 100.0%;"><strong>RC Lens</strong><br>Stade : Stade Bollaert-Delelis<br>Capacité : 38223</div>`)[0];
+                popup_508a374b66aa41592984eb4e2a11e901.setContent(html_4fc0f5e4846aee5937866ca82ce5d4f5);
+            
+        
+
+        circle_marker_6089880b421682a81c0fea986d577847.bindPopup(popup_508a374b66aa41592984eb4e2a11e901)
+        ;
+
+        
+    
+    
+            var circle_marker_c607778d397cad6e50eb7b8762ebfbea = L.circleMarker(
+                [49.2470758, 4.0247869],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0a3fa097231c16328ee74be8aec513ba);
+        
+    
+        var popup_2d713f5905f9641f1787ecb5cb068f48 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b3c78c754edb50183a7c7bbb975815bf = $(`<div id="html_b3c78c754edb50183a7c7bbb975815bf" style="width: 100.0%; height: 100.0%;"><strong>Stade de Reims</strong><br>Stade : Stade Auguste-Delaune<br>Capacité : 20546</div>`)[0];
+                popup_2d713f5905f9641f1787ecb5cb068f48.setContent(html_b3c78c754edb50183a7c7bbb975815bf);
+            
+        
+
+        circle_marker_c607778d397cad6e50eb7b8762ebfbea.bindPopup(popup_2d713f5905f9641f1787ecb5cb068f48)
+        ;
+
+        
+    
+    
+            var circle_marker_2ce140085f79c4b2ad1ac29851b2d7c8 = L.circleMarker(
+                [48.1075655, -1.7126543],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0a3fa097231c16328ee74be8aec513ba);
+        
+    
+        var popup_2ceed61c788d05bc8b5323e475cdeb90 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0084931fdb046df061ec49ec1bbf18aa = $(`<div id="html_0084931fdb046df061ec49ec1bbf18aa" style="width: 100.0%; height: 100.0%;"><strong>Stade rennais FC</strong><br>Stade : Roazhon Park<br>Capacité : 29778</div>`)[0];
+                popup_2ceed61c788d05bc8b5323e475cdeb90.setContent(html_0084931fdb046df061ec49ec1bbf18aa);
+            
+        
+
+        circle_marker_2ce140085f79c4b2ad1ac29851b2d7c8.bindPopup(popup_2ceed61c788d05bc8b5323e475cdeb90)
+        ;
+
+        
+    
+    
+            var circle_marker_9ad4fbc96cffa0fe75e2a658de76adfc = L.circleMarker(
+                [43.5832262, 1.4340638],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0a3fa097231c16328ee74be8aec513ba);
+        
+    
+        var popup_4480f419cff9f18b06d6d28f473bdcda = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1180ed807589d38984aecedb089bf9ba = $(`<div id="html_1180ed807589d38984aecedb089bf9ba" style="width: 100.0%; height: 100.0%;"><strong>Toulouse FC</strong><br>Stade : Stadium de Toulouse<br>Capacité : 33150</div>`)[0];
+                popup_4480f419cff9f18b06d6d28f473bdcda.setContent(html_1180ed807589d38984aecedb089bf9ba);
+            
+        
+
+        circle_marker_9ad4fbc96cffa0fe75e2a658de76adfc.bindPopup(popup_4480f419cff9f18b06d6d28f473bdcda)
+        ;
+
+        
+    
+    
+            var circle_marker_bc461a014051cdcd23f9dfdf706a901e = L.circleMarker(
+                [43.622022, 3.8120898],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0a3fa097231c16328ee74be8aec513ba);
+        
+    
+        var popup_dc1b1dd766ce78088cc84ce1d16dc8c7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_957223cbc9e0cc6be672c25c84b89b7a = $(`<div id="html_957223cbc9e0cc6be672c25c84b89b7a" style="width: 100.0%; height: 100.0%;"><strong>Montpellier HSC</strong><br>Stade : Stade de la Mosson<br>Capacité : 22000</div>`)[0];
+                popup_dc1b1dd766ce78088cc84ce1d16dc8c7.setContent(html_957223cbc9e0cc6be672c25c84b89b7a);
+            
+        
+
+        circle_marker_bc461a014051cdcd23f9dfdf706a901e.bindPopup(popup_dc1b1dd766ce78088cc84ce1d16dc8c7)
+        ;
+
+        
+    
+    
+            var circle_marker_450e35a6228b24f48063a17f42e6bced = L.circleMarker(
+                [48.5600477, 7.7551252],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0a3fa097231c16328ee74be8aec513ba);
+        
+    
+        var popup_76bb7663d662939921dca74e10d706d8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_334b8f757fb0c825e6e57732f890e74d = $(`<div id="html_334b8f757fb0c825e6e57732f890e74d" style="width: 100.0%; height: 100.0%;"><strong>RC Strasbourg</strong><br>Stade : Stade de la Meinau<br>Capacité : 26109</div>`)[0];
+                popup_76bb7663d662939921dca74e10d706d8.setContent(html_334b8f757fb0c825e6e57732f890e74d);
+            
+        
+
+        circle_marker_450e35a6228b24f48063a17f42e6bced.bindPopup(popup_76bb7663d662939921dca74e10d706d8)
+        ;
+
+        
+    
+    
+            var circle_marker_32f72a346e3915b491ab7a466330f5ad = L.circleMarker(
+                [47.256005, -1.5247552],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0a3fa097231c16328ee74be8aec513ba);
+        
+    
+        var popup_14020166b963f74ed46a759da1b45345 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_645f7445901d269742742e874c3463c4 = $(`<div id="html_645f7445901d269742742e874c3463c4" style="width: 100.0%; height: 100.0%;"><strong>FC Nantes</strong><br>Stade : Stade de la Beaujoire<br>Capacité : 35322</div>`)[0];
+                popup_14020166b963f74ed46a759da1b45345.setContent(html_645f7445901d269742742e874c3463c4);
+            
+        
+
+        circle_marker_32f72a346e3915b491ab7a466330f5ad.bindPopup(popup_14020166b963f74ed46a759da1b45345)
+        ;
+
+        
+    
+    
+            var circle_marker_cfca9b7adfe5dbaf3c2f776df5649931 = L.circleMarker(
+                [49.4987513, 0.1694637],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0a3fa097231c16328ee74be8aec513ba);
+        
+    
+        var popup_f0b560f358a7496340bbf74334f9d698 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a20f5f2f21b2cce1e65b9e6e38b27d30 = $(`<div id="html_a20f5f2f21b2cce1e65b9e6e38b27d30" style="width: 100.0%; height: 100.0%;"><strong>Le Havre AC</strong><br>Stade : Stade Océane<br>Capacité : 25178</div>`)[0];
+                popup_f0b560f358a7496340bbf74334f9d698.setContent(html_a20f5f2f21b2cce1e65b9e6e38b27d30);
+            
+        
+
+        circle_marker_cfca9b7adfe5dbaf3c2f776df5649931.bindPopup(popup_f0b560f358a7496340bbf74334f9d698)
+        ;
+
+        
+    
+    
+            feature_group_0a3fa097231c16328ee74be8aec513ba.addTo(map_cdc37a07069654fd14b1d63687258e44);
+        
+    
+            var feature_group_098689be97041de9d2520eed4b54c686 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_cb725b157eb0854408051bc99a0cc3d0 = L.circleMarker(
+                [48.8413634, 2.2530693],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_098689be97041de9d2520eed4b54c686);
+        
+    
+        var popup_e806174df573f305baab1dd7e9554c5c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b757540aa5b90983fbe800b3160c87c9 = $(`<div id="html_b757540aa5b90983fbe800b3160c87c9" style="width: 100.0%; height: 100.0%;"><strong>Paris Saint-Germain</strong><br>Stade : Parc des Princes<br>Capacité : 47929</div>`)[0];
+                popup_e806174df573f305baab1dd7e9554c5c.setContent(html_b757540aa5b90983fbe800b3160c87c9);
+            
+        
+
+        circle_marker_cb725b157eb0854408051bc99a0cc3d0.bindPopup(popup_e806174df573f305baab1dd7e9554c5c)
+        ;
+
+        
+    
+    
+            var circle_marker_b9824ac1942fecd90dc36dba2c2f90e4 = L.circleMarker(
+                [50.6119044, 3.130508],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_098689be97041de9d2520eed4b54c686);
+        
+    
+        var popup_c1ffed420f3e4d77e41a8e494899a384 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_63b534d282a4dbbacf3000e9f0b7d296 = $(`<div id="html_63b534d282a4dbbacf3000e9f0b7d296" style="width: 100.0%; height: 100.0%;"><strong>LOSC Lille</strong><br>Stade : Stade Pierre-Mauroy<br>Capacité : 50186</div>`)[0];
+                popup_c1ffed420f3e4d77e41a8e494899a384.setContent(html_63b534d282a4dbbacf3000e9f0b7d296);
+            
+        
+
+        circle_marker_b9824ac1942fecd90dc36dba2c2f90e4.bindPopup(popup_c1ffed420f3e4d77e41a8e494899a384)
+        ;
+
+        
+    
+    
+            var circle_marker_abbca68a74078439ced68ddf2ddfd562 = L.circleMarker(
+                [45.7653624, 4.9820543],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_098689be97041de9d2520eed4b54c686);
+        
+    
+        var popup_54a29106ab507543bb2a48192c715ea5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a3eb68881c79f19fd5a711b074b6e8fc = $(`<div id="html_a3eb68881c79f19fd5a711b074b6e8fc" style="width: 100.0%; height: 100.0%;"><strong>Olympique lyonnais</strong><br>Stade : Groupama Stadium<br>Capacité : 57206</div>`)[0];
+                popup_54a29106ab507543bb2a48192c715ea5.setContent(html_a3eb68881c79f19fd5a711b074b6e8fc);
+            
+        
+
+        circle_marker_abbca68a74078439ced68ddf2ddfd562.bindPopup(popup_54a29106ab507543bb2a48192c715ea5)
+        ;
+
+        
+    
+    
+            var circle_marker_615c1f10909a657212aea2ee490793b3 = L.circleMarker(
+                [43.269835, 5.3959117],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_098689be97041de9d2520eed4b54c686);
+        
+    
+        var popup_bead818f18bf6105b09db82678fc52a1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_06f5b0b4452874050b053bf90ba73c66 = $(`<div id="html_06f5b0b4452874050b053bf90ba73c66" style="width: 100.0%; height: 100.0%;"><strong>Olympique de Marseille</strong><br>Stade : Orange Vélodrome<br>Capacité : 66226</div>`)[0];
+                popup_bead818f18bf6105b09db82678fc52a1.setContent(html_06f5b0b4452874050b053bf90ba73c66);
+            
+        
+
+        circle_marker_615c1f10909a657212aea2ee490793b3.bindPopup(popup_bead818f18bf6105b09db82678fc52a1)
+        ;
+
+        
+    
+    
+            var circle_marker_2abef8325c92be468864cac89b1926cf = L.circleMarker(
+                [45.4607567, 4.3900932],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_098689be97041de9d2520eed4b54c686);
+        
+    
+        var popup_3a20ad755390d2213a4c43ec3a265fa2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_28abe83e04d4c806145fa56e356ff49b = $(`<div id="html_28abe83e04d4c806145fa56e356ff49b" style="width: 100.0%; height: 100.0%;"><strong>AS Saint-Étienne</strong><br>Stade : Stade Geoffroy-Guichard<br>Capacité : 41965</div>`)[0];
+                popup_3a20ad755390d2213a4c43ec3a265fa2.setContent(html_28abe83e04d4c806145fa56e356ff49b);
+            
+        
+
+        circle_marker_2abef8325c92be468864cac89b1926cf.bindPopup(popup_3a20ad755390d2213a4c43ec3a265fa2)
+        ;
+
+        
+    
+    
+            feature_group_098689be97041de9d2520eed4b54c686.addTo(map_cdc37a07069654fd14b1d63687258e44);
+        
+    
+            var layer_control_244612b058b3ecbe90da4a0ae680d2c6_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_3b82b114a8774e1a55828ba86134aeff,
+                },
+                overlays :  {
+                    "Capacit\u00e9 \u003c 20 000" : feature_group_d62b5509acd085c05357d6215a69c6de,
+                    "20 000 - 40 000" : feature_group_0a3fa097231c16328ee74be8aec513ba,
+                    "Capacit\u00e9 \u003e 40 000" : feature_group_098689be97041de9d2520eed4b54c686,
+                },
+            };
+            let layer_control_244612b058b3ecbe90da4a0ae680d2c6 = L.control.layers(
+                layer_control_244612b058b3ecbe90da4a0ae680d2c6_layers.base_layers,
+                layer_control_244612b058b3ecbe90da4a0ae680d2c6_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_cdc37a07069654fd14b1d63687258e44);
+
+        
+</script>
+</html>
